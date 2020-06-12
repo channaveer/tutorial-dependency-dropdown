@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 'cities'    => $cities
             ]
         ]);
+        exit;
     } catch (Exception $e) {
         http_response_code(400);
         echo json_encode([
@@ -44,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'message'   => 'Error in fetching state details',
             'error'    => $e->getMessage()
         ]);
+        exit;
     }
 }
 /** If GET request to the API then return 405 (Method Not Supported) status code */
