@@ -1,0 +1,16 @@
+.container {
+    width: 200px;
+    margin: 30px auto;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown select {
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
